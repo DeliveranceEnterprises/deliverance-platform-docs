@@ -1,20 +1,68 @@
 site_name: "Deliverance Platform: Manual"
-site_description: Manual de uso de la plataforma Deliverance y referencia de su API REST
+site_description: Deliverance platform user manual and REST API reference
+site_url: https://deliveranceenterprises.github.io/deliverance-platform-docs/
 site_dir: site
 docs_dir: docs
 theme:
   name: material
-  language: es
+  language: en
   logo: assets/capturas/logo.png
   favicon: assets/capturas/logo.png
   palette:
     scheme: default
     primary: blue grey
     accent: blue grey
-  features: [navigation.instant, navigation.tracking, navigation.sections, navigation.top, navigation.indexes, toc.follow, search.suggest, search.highlight, content.code.copy]
+  # No navigation.instant: the language selector needs full page loads
+  features: [navigation.tracking, navigation.sections, navigation.top, navigation.indexes, toc.follow, search.suggest, search.highlight, content.code.copy]
 plugins:
-  - search:
-      lang: es
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          site_description: Manual de uso de la plataforma Deliverance y referencia de su API REST
+          nav_translations:
+            Home: Inicio
+            Introduction: Introducción
+            What is Deliverance: Qué es Deliverance
+            Getting started: Primeros pasos
+            What's new: Novedades
+            User guide: Guía de uso
+            API reference: Referencia de API
+            Overview: Introducción
+            Authentication: Autenticación
+        - locale: zh
+          name: 简体中文
+          build: true
+          site_description: Deliverance 平台使用手册与 REST API 参考
+          nav_translations:
+            Home: 首页
+            Introduction: 简介
+            What is Deliverance: 什么是 Deliverance
+            Getting started: 快速入门
+            What's new: 更新内容
+            User guide: 使用指南
+            API reference: API 参考
+            Overview: 概述
+            Authentication: 身份验证
+            Login: 登录
+            Dashboard: 仪表板
+            Devices: 设备
+            Monitor: 监控
+            Operation: 运行
+            Workflows: 工作流
+            Analytics: 分析
+            User Settings: 用户设置
+            Admin: 管理
 markdown_extensions:
   - admonition
   - attr_list
@@ -25,12 +73,12 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
 nav:
-  - Inicio: index.md
-  - Introducción:
-      - Qué es Deliverance: introduccion/que-es-deliverance.md
-      - Primeros pasos: introduccion/primeros-pasos.md
-      - Novedades: introduccion/novedades.md
-  - Guía de uso:
+  - Home: index.md
+  - Introduction:
+      - What is Deliverance: introduccion/que-es-deliverance.md
+      - Getting started: introduccion/primeros-pasos.md
+      - What's new: introduccion/novedades.md
+  - User guide:
       - Login: guia-de-uso/login.md
       - Dashboard: guia-de-uso/dashboard.md
       - Devices: guia-de-uso/devices.md
@@ -40,9 +88,9 @@ nav:
       - Analytics: guia-de-uso/analytics.md
       - User Settings: guia-de-uso/user-settings.md
       - Admin: guia-de-uso/admin.md
-  - Referencia de API:
-      - Introducción: referencia-api/introduccion.md
-      - Autenticación: referencia-api/autenticacion.md
+  - API reference:
+      - Overview: referencia-api/introduccion.md
+      - Authentication: referencia-api/autenticacion.md
       - login: referencia-api/login.md
       - users: referencia-api/users.md
       - organizations: referencia-api/organizations.md

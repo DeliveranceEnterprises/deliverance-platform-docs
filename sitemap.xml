@@ -1,3 +1,675 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/admin/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/admin/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/admin/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/admin/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/analytics/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/analytics/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/analytics/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/analytics/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/dashboard/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/dashboard/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/dashboard/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/dashboard/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/devices/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/devices/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/devices/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/devices/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/login/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/login/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/login/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/login/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/monitor/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/monitor/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/monitor/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/monitor/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/operation/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/operation/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/operation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/operation/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/user-settings/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/user-settings/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/user-settings/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/user-settings/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/workflows/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/workflows/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/novedades/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/novedades/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/novedades/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/novedades/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/primeros-pasos/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/primeros-pasos/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/primeros-pasos/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/primeros-pasos/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/que-es-deliverance/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/que-es-deliverance/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/que-es-deliverance/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/que-es-deliverance/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/autenticacion/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/autenticacion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/autenticacion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/autenticacion/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/devices/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/devices/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/devices/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/devices/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/events/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/events/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/events/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/events/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/introduccion/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/introduccion/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/kpis/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/kpis/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/kpis/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/kpis/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/login/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/login/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/login/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/login/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/organizations/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/organizations/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/organizations/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/organizations/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/robot-maps/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/robot-maps/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/robot-maps/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/robot-maps/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/scenes/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/scenes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/scenes/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/scenes/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/settings/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/settings/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/settings/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/settings/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/subscriptions/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/subscriptions/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/subscriptions/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/subscriptions/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/tasks/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/tasks/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/tasks/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/tasks/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/users/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/users/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/users/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/users/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/utils/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/utils/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/utils/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/utils/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/workflows/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/workflows/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/admin/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/admin/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/admin/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/admin/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/analytics/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/analytics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/analytics/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/analytics/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/dashboard/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/dashboard/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/dashboard/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/dashboard/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/devices/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/devices/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/devices/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/devices/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/login/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/login/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/login/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/login/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/monitor/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/monitor/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/monitor/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/monitor/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/operation/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/operation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/operation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/operation/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/user-settings/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/user-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/user-settings/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/user-settings/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/workflows/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/workflows/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/novedades/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/novedades/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/novedades/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/novedades/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/primeros-pasos/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/primeros-pasos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/primeros-pasos/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/primeros-pasos/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/que-es-deliverance/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/que-es-deliverance/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/que-es-deliverance/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/que-es-deliverance/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/autenticacion/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/autenticacion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/autenticacion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/autenticacion/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/devices/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/devices/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/devices/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/devices/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/events/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/events/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/events/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/events/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/introduccion/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/introduccion/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/kpis/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/kpis/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/kpis/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/kpis/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/login/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/login/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/login/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/login/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/organizations/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/organizations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/organizations/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/organizations/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/robot-maps/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/robot-maps/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/robot-maps/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/robot-maps/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/scenes/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/scenes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/scenes/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/scenes/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/settings/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/settings/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/settings/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/subscriptions/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/subscriptions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/subscriptions/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/subscriptions/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/tasks/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/tasks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/tasks/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/tasks/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/users/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/users/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/users/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/users/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/utils/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/utils/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/utils/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/utils/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/workflows/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/workflows/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/admin/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/admin/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/admin/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/admin/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/analytics/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/analytics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/analytics/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/analytics/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/dashboard/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/dashboard/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/dashboard/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/dashboard/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/devices/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/devices/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/devices/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/devices/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/login/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/login/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/login/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/login/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/monitor/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/monitor/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/monitor/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/monitor/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/operation/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/operation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/operation/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/operation/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/user-settings/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/user-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/user-settings/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/user-settings/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/workflows/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/guia-de-uso/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/guia-de-uso/workflows/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/novedades/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/novedades/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/novedades/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/novedades/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/primeros-pasos/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/primeros-pasos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/primeros-pasos/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/primeros-pasos/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/que-es-deliverance/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/introduccion/que-es-deliverance/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/que-es-deliverance/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/introduccion/que-es-deliverance/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/autenticacion/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/autenticacion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/autenticacion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/autenticacion/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/devices/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/devices/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/devices/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/devices/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/events/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/events/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/events/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/events/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/introduccion/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/introduccion/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/kpis/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/kpis/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/kpis/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/kpis/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/login/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/login/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/login/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/login/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/organizations/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/organizations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/organizations/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/organizations/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/robot-maps/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/robot-maps/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/robot-maps/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/robot-maps/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/scenes/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/scenes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/scenes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/scenes/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/settings/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/settings/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/settings/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/subscriptions/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/subscriptions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/subscriptions/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/subscriptions/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/tasks/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/tasks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/tasks/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/tasks/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/users/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/users/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/users/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/users/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/utils/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/utils/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/utils/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/utils/"/>
+    </url>
+    <url>
+        <loc>https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/workflows/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/zh/referencia-api/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/workflows/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/es/referencia-api/workflows/"/>
+    </url>
 </urlset>

@@ -1,14 +1,16 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/devices/">
       
       
         <link rel="prev" href="../dashboard/">
@@ -17,6 +19,12 @@
         <link rel="next" href="../monitor/">
       
       
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../es/guia-de-uso/devices/" hreflang="es">
+        
+          <link rel="alternate" href="../../zh/guia-de-uso/devices/" hreflang="zh">
         
       
       
@@ -74,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#devices-gestion-de-dispositivos" class="md-skip">
-          Saltar a contenido
+        <a href="#devices-device-management" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -89,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="../../assets/capturas/logo.png" alt="logo">
@@ -120,6 +128,38 @@
     
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/guia-de-uso/devices/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/guia-de-uso/devices/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -131,16 +171,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -153,7 +193,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -187,7 +227,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -213,7 +253,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -264,7 +304,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -280,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -300,7 +340,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -328,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -356,7 +396,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -429,7 +469,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -445,7 +485,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -560,7 +600,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -569,15 +609,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activar-un-dispositivo" class="md-nav__link">
+  <a href="#enable-a-device" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Activar un dispositivo
+        Enable a device
       
     </span>
   </a>
@@ -585,10 +625,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#asignar-un-dispositivo-a-otra-organizacion" class="md-nav__link">
+  <a href="#assign-a-device-to-another-organization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Asignar un dispositivo a otra organización
+        Assign a device to another organization
       
     </span>
   </a>
@@ -596,10 +636,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#filtrar-el-listado" class="md-nav__link">
+  <a href="#filter-the-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Filtrar el listado
+        Filter the list
       
     </span>
   </a>
@@ -607,10 +647,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detalle-de-dispositivo" class="md-nav__link">
+  <a href="#device-detail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detalle de dispositivo
+        Device detail
       
     </span>
   </a>
@@ -618,10 +658,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hubs-y-medidores-de-energia" class="md-nav__link">
+  <a href="#hubs-and-energy-meters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hubs y medidores de energía
+        Hubs and energy meters
       
     </span>
   </a>
@@ -629,10 +669,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#editar-un-dispositivo" class="md-nav__link">
+  <a href="#edit-a-device" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Editar un dispositivo
+        Edit a device
       
     </span>
   </a>
@@ -885,7 +925,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -901,7 +941,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -921,7 +961,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -949,7 +989,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1347,7 +1387,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1356,15 +1396,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activar-un-dispositivo" class="md-nav__link">
+  <a href="#enable-a-device" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Activar un dispositivo
+        Enable a device
       
     </span>
   </a>
@@ -1372,10 +1412,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#asignar-un-dispositivo-a-otra-organizacion" class="md-nav__link">
+  <a href="#assign-a-device-to-another-organization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Asignar un dispositivo a otra organización
+        Assign a device to another organization
       
     </span>
   </a>
@@ -1383,10 +1423,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#filtrar-el-listado" class="md-nav__link">
+  <a href="#filter-the-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Filtrar el listado
+        Filter the list
       
     </span>
   </a>
@@ -1394,10 +1434,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detalle-de-dispositivo" class="md-nav__link">
+  <a href="#device-detail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detalle de dispositivo
+        Device detail
       
     </span>
   </a>
@@ -1405,10 +1445,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hubs-y-medidores-de-energia" class="md-nav__link">
+  <a href="#hubs-and-energy-meters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hubs y medidores de energía
+        Hubs and energy meters
       
     </span>
   </a>
@@ -1416,10 +1456,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#editar-un-dispositivo" class="md-nav__link">
+  <a href="#edit-a-device" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Editar un dispositivo
+        Edit a device
       
     </span>
   </a>
@@ -1443,28 +1483,28 @@
 
 
 
-<h1 id="devices-gestion-de-dispositivos">Devices: Gestión de dispositivos<a class="headerlink" href="#devices-gestion-de-dispositivos" title="Permanent link">&para;</a></h1>
-<p>Habilita y gestiona dispositivos entre organizaciones.</p>
+<h1 id="devices-device-management">Devices: Device management<a class="headerlink" href="#devices-device-management" title="Permanent link">&para;</a></h1>
+<p>Enable and manage devices across organizations.</p>
 <p><img alt="Devices" src="../../assets/capturas/devices.png" /></p>
-<p>Cada fila muestra imagen, nombre, modelo, descripción, número de serie, dirección MAC e ID. El menú de la fila permite <strong>editar</strong> o <strong>deshabilitar</strong> el dispositivo.</p>
-<h2 id="activar-un-dispositivo">Activar un dispositivo<a class="headerlink" href="#activar-un-dispositivo" title="Permanent link">&para;</a></h2>
-<p><img alt="Activar dispositivos" src="../../assets/capturas/devices-add-device.png" /></p>
-<p><strong>+ Add Device</strong> abre la lista de dispositivos que pertenecen a la organización pero están deshabilitados. Al activarlos (<strong>Enable</strong>, o <strong>Enable All Devices</strong> para todos) aparecen en el Dashboard, Monitor y Analytics.</p>
-<h2 id="asignar-un-dispositivo-a-otra-organizacion">Asignar un dispositivo a otra organización<a class="headerlink" href="#asignar-un-dispositivo-a-otra-organizacion" title="Permanent link">&para;</a></h2>
-<p><img alt="Asignar a otra organización" src="../../assets/capturas/devices-switch-organization.png" /></p>
-<p><strong>Switch Organization</strong> (solo administradores) transfiere un dispositivo a la organización propia o a una de sus hijas: se elige el destino en <strong>Select Target</strong> y se confirma con <strong>Transfer</strong>. Al transferir un hub se transfieren también sus medidores.</p>
-<h2 id="filtrar-el-listado">Filtrar el listado<a class="headerlink" href="#filtrar-el-listado" title="Permanent link">&para;</a></h2>
-<p><img alt="Filtrar dispositivos" src="../../assets/capturas/devices-filter.png" /></p>
-<p><strong>Filter</strong> acota la lista por <em>Name</em>, <em>Model</em>, <em>Serial Number</em>, <em>MAC Address</em>, <em>Description</em> o <em>ID</em>.</p>
-<h2 id="detalle-de-dispositivo">Detalle de dispositivo<a class="headerlink" href="#detalle-de-dispositivo" title="Permanent link">&para;</a></h2>
-<p><img alt="Detalle de dispositivo" src="../../assets/capturas/devices-detail.png" /></p>
-<p>Al seleccionar una fila se despliega su ficha con las acciones <strong>Edit</strong> y <strong>Delete</strong>. Un dispositivo que ya tiene datos no se puede eliminar: hay que deshabilitarlo.</p>
-<h2 id="hubs-y-medidores-de-energia">Hubs y medidores de energía<a class="headerlink" href="#hubs-y-medidores-de-energia" title="Permanent link">&para;</a></h2>
-<p><img alt="Detalle de un hub" src="../../assets/capturas/devices-hub.png" /></p>
-<p>La ficha de un hub lista sus medidores (<em>Individual Meters</em>), que se pueden editar y habilitar por separado o todos a la vez. Deshabilitar un hub deshabilita sus medidores.</p>
-<h2 id="editar-un-dispositivo">Editar un dispositivo<a class="headerlink" href="#editar-un-dispositivo" title="Permanent link">&para;</a></h2>
-<p><img alt="Editar un dispositivo" src="../../assets/capturas/devices-edit.png" /></p>
-<p>Se pueden cambiar el nombre y la descripción. En los medidores, además, el cableado (<strong>Wiring</strong>: monofásico o trifásico) y el nombre de cada canal (<strong>Channel names</strong>).</p>
+<p>Each row shows image, name, model, description, serial number, MAC address and ID. The row menu lets you <strong>edit</strong> or <strong>disable</strong> the device.</p>
+<h2 id="enable-a-device">Enable a device<a class="headerlink" href="#enable-a-device" title="Permanent link">&para;</a></h2>
+<p><img alt="Enable devices" src="../../assets/capturas/devices-add-device.png" /></p>
+<p><strong>+ Add Device</strong> opens the list of devices that belong to the organization but are disabled. Once enabled (<strong>Enable</strong>, or <strong>Enable All Devices</strong> for all of them) they appear in Dashboard, Monitor and Analytics.</p>
+<h2 id="assign-a-device-to-another-organization">Assign a device to another organization<a class="headerlink" href="#assign-a-device-to-another-organization" title="Permanent link">&para;</a></h2>
+<p><img alt="Assign to another organization" src="../../assets/capturas/devices-switch-organization.png" /></p>
+<p><strong>Switch Organization</strong> (administrators only) transfers a device to your own organization or one of its children: choose the destination in <strong>Select Target</strong> and confirm with <strong>Transfer</strong>. Transferring a hub also transfers its meters.</p>
+<h2 id="filter-the-list">Filter the list<a class="headerlink" href="#filter-the-list" title="Permanent link">&para;</a></h2>
+<p><img alt="Filter devices" src="../../assets/capturas/devices-filter.png" /></p>
+<p><strong>Filter</strong> narrows the list by <em>Name</em>, <em>Model</em>, <em>Serial Number</em>, <em>MAC Address</em>, <em>Description</em> or <em>ID</em>.</p>
+<h2 id="device-detail">Device detail<a class="headerlink" href="#device-detail" title="Permanent link">&para;</a></h2>
+<p><img alt="Device detail" src="../../assets/capturas/devices-detail.png" /></p>
+<p>Selecting a row expands its details, with the <strong>Edit</strong> and <strong>Delete</strong> actions. A device that already has data cannot be deleted: it has to be disabled.</p>
+<h2 id="hubs-and-energy-meters">Hubs and energy meters<a class="headerlink" href="#hubs-and-energy-meters" title="Permanent link">&para;</a></h2>
+<p><img alt="Hub detail" src="../../assets/capturas/devices-hub.png" /></p>
+<p>A hub's details list its meters (<em>Individual Meters</em>), which can be edited and enabled separately or all at once. Disabling a hub disables its meters.</p>
+<h2 id="edit-a-device">Edit a device<a class="headerlink" href="#edit-a-device" title="Permanent link">&para;</a></h2>
+<p><img alt="Edit a device" src="../../assets/capturas/devices-edit.png" /></p>
+<p>You can change the name and description. For meters, also the wiring (<strong>Wiring</strong>: monophase or three-phase) and the name of each channel (<strong>Channel names</strong>).</p>
 
 
 
@@ -1488,7 +1528,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1520,7 +1560,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>

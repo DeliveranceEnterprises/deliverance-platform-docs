@@ -1,14 +1,16 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/workflows/">
       
       
         <link rel="prev" href="../operation/">
@@ -17,6 +19,12 @@
         <link rel="next" href="../analytics/">
       
       
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../es/guia-de-uso/workflows/" hreflang="es">
+        
+          <link rel="alternate" href="../../zh/guia-de-uso/workflows/" hreflang="zh">
         
       
       
@@ -74,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#workflows-automatizaciones" class="md-skip">
-          Saltar a contenido
+        <a href="#workflows-automations" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -89,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="../../assets/capturas/logo.png" alt="logo">
@@ -120,6 +128,38 @@
     
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/guia-de-uso/workflows/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/guia-de-uso/workflows/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -131,16 +171,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -153,7 +193,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -187,7 +227,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -213,7 +253,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -264,7 +304,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -280,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -300,7 +340,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -328,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -356,7 +396,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -429,7 +469,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -445,7 +485,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -644,7 +684,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -653,7 +693,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -670,10 +710,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#evento" class="md-nav__link">
+  <a href="#event" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Evento
+        Event
       
     </span>
   </a>
@@ -681,10 +721,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#condicion" class="md-nav__link">
+  <a href="#condition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Condición
+        Condition
       
     </span>
   </a>
@@ -692,10 +732,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tarea" class="md-nav__link">
+  <a href="#task" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tarea
+        Task
       
     </span>
   </a>
@@ -703,10 +743,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#reglas" class="md-nav__link">
+  <a href="#rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reglas
+        Rules
       
     </span>
   </a>
@@ -880,7 +920,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -896,7 +936,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -916,7 +956,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -944,7 +984,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1342,7 +1382,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1351,7 +1391,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -1368,10 +1408,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#evento" class="md-nav__link">
+  <a href="#event" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Evento
+        Event
       
     </span>
   </a>
@@ -1379,10 +1419,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#condicion" class="md-nav__link">
+  <a href="#condition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Condición
+        Condition
       
     </span>
   </a>
@@ -1390,10 +1430,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tarea" class="md-nav__link">
+  <a href="#task" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tarea
+        Task
       
     </span>
   </a>
@@ -1401,10 +1441,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#reglas" class="md-nav__link">
+  <a href="#rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reglas
+        Rules
       
     </span>
   </a>
@@ -1433,72 +1473,72 @@
 
 
 
-<h1 id="workflows-automatizaciones">Workflows: Automatizaciones<a class="headerlink" href="#workflows-automatizaciones" title="Permanent link">&para;</a></h1>
-<p>Un workflow da tareas a los robots cuando ocurre algo. Se gestiona en <strong>Operation → Workflow operation</strong> (administradores) y <strong>siempre pertenece a la propia organización</strong>, aunque se esté viendo otra.</p>
+<h1 id="workflows-automations">Workflows: Automations<a class="headerlink" href="#workflows-automations" title="Permanent link">&para;</a></h1>
+<p>A workflow gives tasks to robots when something happens. It is managed in <strong>Operation → Workflow operation</strong> (administrators) and <strong>always belongs to your own organization</strong>, even if you are viewing another one.</p>
 <p><img alt="Workflow operation" src="../../assets/capturas/operation-workflows.png" /></p>
 <ul>
-<li><strong>Workflow collection</strong>: los workflows, con <strong>New workflow</strong>, un interruptor <strong>Active</strong> y un menú para abrir, duplicar o borrar. Para borrarlo hay que desactivarlo antes.</li>
-<li><strong>Running/Scheduled</strong>: lo que está en marcha y los próximos arranques por hora. Una ejecución se puede pausar, reanudar o cancelar.</li>
-<li><strong>History</strong>: las últimas ejecuciones.</li>
+<li><strong>Workflow collection</strong>: the workflows, with <strong>New workflow</strong>, an <strong>Active</strong> switch and a menu to open, duplicate or delete. A workflow has to be deactivated before it can be deleted.</li>
+<li><strong>Running/Scheduled</strong>: what is running and the next starts by time. A run can be paused, resumed or cancelled.</li>
+<li><strong>History</strong>: the latest runs.</li>
 </ul>
-<p>Al <strong>pausar</strong>, el robot termina la tarea que tiene en curso. Al <strong>cancelar</strong>, se le pide que la pare. Un workflow con ejecuciones en curso no se puede desactivar.</p>
+<p>On <strong>pause</strong>, the robot finishes the task it is running. On <strong>cancel</strong>, it is asked to stop it. A workflow with runs in progress cannot be deactivated.</p>
 <h2 id="editor">Editor<a class="headerlink" href="#editor" title="Permanent link">&para;</a></h2>
-<p><img alt="Editor de workflows" src="../../assets/capturas/workflow-editor.png" /></p>
-<p>Se añaden cajas desde la paleta (clic o arrastrando) y se unen con flechas. <em>Supr</em> o <em>Retroceso</em> borra lo seleccionado. El panel <strong>Checks</strong> muestra los problemas. Solo se puede activar si está guardado y sin problemas, y mientras está activo es de solo lectura.</p>
-<h3 id="evento">Evento<a class="headerlink" href="#evento" title="Permanent link">&para;</a></h3>
-<p><img alt="Caja de evento" src="../../assets/capturas/workflow-editor-event.png" /></p>
-<p>Lo que pone en marcha el workflow: <strong>Kind of event</strong> y, si se quiere, qué dispositivo lo envía (<strong>Sent by</strong>).</p>
+<p><img alt="Workflow editor" src="../../assets/capturas/workflow-editor.png" /></p>
+<p>Boxes are added from the palette (by clicking or dragging) and joined with arrows. <em>Delete</em> or <em>Backspace</em> removes what is selected. The <strong>Checks</strong> panel shows the problems. A workflow can only be activated if it is saved and has no problems, and while active it is read-only.</p>
+<h3 id="event">Event<a class="headerlink" href="#event" title="Permanent link">&para;</a></h3>
+<p><img alt="Event box" src="../../assets/capturas/workflow-editor-event.png" /></p>
+<p>What starts the workflow: <strong>Kind of event</strong> and, optionally, which device sends it (<strong>Sent by</strong>).</p>
 <table>
 <thead>
 <tr>
-<th>Origen</th>
-<th>Eventos</th>
+<th>Source</th>
+<th>Events</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Horario</td>
-<td>Llega una hora, en los días elegidos (ninguno = todos)</td>
+<td>Schedule</td>
+<td>A time arrives, on the chosen days (none = every day)</td>
 </tr>
 <tr>
-<td>Señales</td>
-<td>Pulsador, derrame detectado, pedido del almacén, aviso de una cámara</td>
+<td>Signals</td>
+<td>Pushbutton, spill detected, warehouse order, camera alert</td>
 </tr>
 <tr>
-<td>Tareas</td>
-<td>Empieza, termina bien, falla, se cancela, caduca, lanzada a mano</td>
+<td>Tasks</td>
+<td>Starts, ends well, fails, is cancelled, expires, launched by hand</td>
 </tr>
 <tr>
 <td>Robot</td>
-<td>Sin conexión, avería, parada de emergencia, empieza a cargar, se recupera, batería baja</td>
+<td>Offline, fault, emergency stop, starts charging, recovers, low battery</td>
 </tr>
 <tr>
-<td>Alarmas</td>
-<td>Salta o se apaga una alarma</td>
+<td>Alarms</td>
+<td>An alarm goes off or clears</td>
 </tr>
 </tbody>
 </table>
-<h3 id="condicion">Condición<a class="headerlink" href="#condicion" title="Permanent link">&para;</a></h3>
-<p><img alt="Caja de condición" src="../../assets/capturas/workflow-editor-condition.png" /></p>
-<p>Decide por <strong>Yes</strong> o <strong>No</strong>:</p>
+<h3 id="condition">Condition<a class="headerlink" href="#condition" title="Permanent link">&para;</a></h3>
+<p><img alt="Condition box" src="../../assets/capturas/workflow-editor-condition.png" /></p>
+<p>Decides by <strong>Yes</strong> or <strong>No</strong>:</p>
 <ul>
-<li><strong>What the event carries</strong>: compara un dato del evento.</li>
-<li><strong>How the task ended</strong>: si terminó bien, falló o se canceló. Solo justo después de una tarea.</li>
+<li><strong>What the event carries</strong>: compares a value of the event.</li>
+<li><strong>How the task ended</strong>: whether it ended well, failed or was cancelled. Only right after a task.</li>
 <li><strong>Whether the robot has more tasks</strong>.</li>
 </ul>
-<h3 id="tarea">Tarea<a class="headerlink" href="#tarea" title="Permanent link">&para;</a></h3>
-<p><img alt="Caja de tarea" src="../../assets/capturas/workflow-editor-task.png" /></p>
+<h3 id="task">Task<a class="headerlink" href="#task" title="Permanent link">&para;</a></h3>
+<p><img alt="Task box" src="../../assets/capturas/workflow-editor-task.png" /></p>
 <ul>
-<li><strong>Robot</strong>: el del evento, el de la tarea anterior, uno concreto o cualquiera de un modelo (el primero libre, o el libre con más batería).</li>
-<li><strong>Task</strong>: el nombre de la tarea tal como está en el robot. Vacío: el valor del evento.</li>
-<li><strong>Deadline</strong>: minutos para empezar antes de caducar (0 = sin plazo).</li>
-<li><strong>Retries</strong>: reintentos si falla, y la espera entre ellos.</li>
+<li><strong>Robot</strong>: the event's, the previous task's, a specific one or any of a model (the first one that is free, or the free one with most battery).</li>
+<li><strong>Task</strong>: the name of the task as it is on the robot. Empty: the event's value.</li>
+<li><strong>Deadline</strong>: minutes to start before expiring (0 = no deadline).</li>
+<li><strong>Retries</strong>: retries if it fails, and the wait between them.</li>
 </ul>
-<h3 id="reglas">Reglas<a class="headerlink" href="#reglas" title="Permanent link">&para;</a></h3>
+<h3 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Nada puede entrar en una caja de evento.</li>
-<li>Después de una tarea solo puede ir una condición.</li>
-<li>No puede haber ciclos.</li>
+<li>Nothing can go into an event box.</li>
+<li>Only a condition can follow a task.</li>
+<li>There can be no cycles.</li>
 </ul>
 
 
@@ -1523,7 +1563,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1555,7 +1595,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>

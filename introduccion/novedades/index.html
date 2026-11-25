@@ -1,14 +1,16 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/introduccion/novedades/">
       
       
         <link rel="prev" href="../primeros-pasos/">
@@ -18,6 +20,12 @@
       
       
         
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../es/introduccion/novedades/" hreflang="es">
+        
+          <link rel="alternate" href="../../zh/introduccion/novedades/" hreflang="zh">
+        
       
       
       <link rel="icon" href="../../assets/capturas/logo.png">
@@ -25,7 +33,7 @@
     
     
       
-        <title>Novedades - Deliverance Platform: Manual</title>
+        <title>What's new - Deliverance Platform: Manual</title>
       
     
     
@@ -74,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#novedades" class="md-skip">
-          Saltar a contenido
+        <a href="#whats-new" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -89,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="../../assets/capturas/logo.png" alt="logo">
@@ -109,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Novedades
+              What's new
             
           </span>
         </div>
@@ -119,6 +127,38 @@
       
     
     
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/introduccion/novedades/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/introduccion/novedades/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
     
       
@@ -131,16 +171,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -153,7 +193,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -187,7 +227,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -213,7 +253,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -266,7 +306,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -282,7 +322,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -302,7 +342,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -330,7 +370,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -367,7 +407,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -385,7 +425,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -397,7 +437,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -406,15 +446,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#en-la-plataforma" class="md-nav__link">
+  <a href="#in-the-platform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        En la plataforma
+        In the platform
       
     </span>
   </a>
@@ -422,10 +462,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#en-la-api" class="md-nav__link">
+  <a href="#in-the-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        En la API
+        In the API
       
     </span>
   </a>
@@ -498,7 +538,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -514,7 +554,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -841,7 +881,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -857,7 +897,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -877,7 +917,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -905,7 +945,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1303,7 +1343,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1312,15 +1352,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#en-la-plataforma" class="md-nav__link">
+  <a href="#in-the-platform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        En la plataforma
+        In the platform
       
     </span>
   </a>
@@ -1328,10 +1368,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#en-la-api" class="md-nav__link">
+  <a href="#in-the-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        En la API
+        In the API
       
     </span>
   </a>
@@ -1355,27 +1395,27 @@
 
 
 
-<h1 id="novedades">Novedades<a class="headerlink" href="#novedades" title="Permanent link">&para;</a></h1>
-<p>Edición para <strong>Platform 0.9.2</strong> y <strong>API 0.11.2</strong> (24 de noviembre de 2026).</p>
-<h2 id="en-la-plataforma">En la plataforma<a class="headerlink" href="#en-la-plataforma" title="Permanent link">&para;</a></h2>
+<h1 id="whats-new">What's new<a class="headerlink" href="#whats-new" title="Permanent link">&para;</a></h1>
+<p>Edition for <strong>Platform 0.9.2</strong> and <strong>API 0.11.2</strong> (24 November 2026).</p>
+<h2 id="in-the-platform">In the platform<a class="headerlink" href="#in-the-platform" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="../../guia-de-uso/operation/">Operation</a></strong>: nueva sección para administradores. Arrancar, parar y cancelar tareas de los robots, con el cronograma de lo ejecutado.</li>
-<li><strong><a href="../../guia-de-uso/workflows/">Workflows</a></strong>: editor visual de automatizaciones con tres cajas (evento, condición y tarea), comprobaciones e histórico de ejecuciones.</li>
-<li><strong><a href="../../guia-de-uso/dashboard/">Dashboard</a></strong> configurable por organización, con filtros y tarjetas nuevas: Recent Activity, Camera View, Robot Status Timeline y Start Tasks.</li>
-<li><strong><a href="../../guia-de-uso/monitor/">Monitor</a></strong>: cámaras, histórico de estado, actividad del dispositivo, posición del robot sobre su mapa y modo avanzado de gráficas.</li>
-<li><strong><a href="../../guia-de-uso/analytics/">Analytics</a></strong>: pestaña de eventos con exportación a CSV.</li>
-<li><strong>Métricas</strong>: <em>Compliance</em> pasa a llamarse <em>Task completion</em>, y <em>Utilization</em> y <em>Availability</em> se calculan ahora sobre tiempo.</li>
-<li><strong>Errores de conector</strong> visibles: si un conector no arranca o no para una tarea, la plataforma lo dice.</li>
-<li><strong><a href="../../guia-de-uso/admin/#tier-de-una-organizacion">Tiers</a></strong> de las organizaciones y suspensión.</li>
-<li><strong>Idiomas</strong>: English, Español y 简体中文.</li>
+<li><strong><a href="../../guia-de-uso/operation/">Operation</a></strong>: new section for administrators. Start, stop and cancel robot tasks, with a timeline of what has run.</li>
+<li><strong><a href="../../guia-de-uso/workflows/">Workflows</a></strong>: visual automation editor with three boxes (event, condition and task), checks and run history.</li>
+<li><strong><a href="../../guia-de-uso/dashboard/">Dashboard</a></strong> configurable per organization, with filters and new cards: Recent Activity, Camera View, Robot Status Timeline and Start Tasks.</li>
+<li><strong><a href="../../guia-de-uso/monitor/">Monitor</a></strong>: cameras, status history, device activity, robot position on its map and an advanced chart mode.</li>
+<li><strong><a href="../../guia-de-uso/analytics/">Analytics</a></strong>: events tab with CSV export.</li>
+<li><strong>Metrics</strong>: <em>Compliance</em> is now called <em>Task completion</em>, and <em>Utilization</em> and <em>Availability</em> are now calculated over time.</li>
+<li><strong>Connector errors</strong> made visible: if a connector does not start or stop a task, the platform says so.</li>
+<li><strong><a href="../../guia-de-uso/admin/#organization-tier">Tiers</a></strong> of organizations, and suspension.</li>
+<li><strong>Languages</strong>: English, Español and 简体中文.</li>
 </ul>
-<h2 id="en-la-api">En la API<a class="headerlink" href="#en-la-api" title="Permanent link">&para;</a></h2>
+<h2 id="in-the-api">In the API<a class="headerlink" href="#in-the-api" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Nuevos grupos: <a href="../../referencia-api/workflows/">workflows</a>, <a href="../../referencia-api/events/">events</a>, <a href="../../referencia-api/kpis/">kpis</a>, <a href="../../referencia-api/robot-maps/">robot-maps</a>, <a href="../../referencia-api/settings/">settings</a> y <a href="../../referencia-api/subscriptions/">subscriptions</a>.</li>
-<li><a href="../../referencia-api/devices/">devices</a> y <a href="../../referencia-api/tasks/">tasks</a>: catálogo de tareas, arranque, cancelación, cronograma, imagen de cámara y configuración de medidores.</li>
-<li><strong>Alcance de los superusuarios</strong>: solo su organización y las que cuelgan de ella.</li>
-<li>Solo puede haber una tarea en marcha por robot (409), y un dispositivo con datos no se borra, se deshabilita (409).</li>
-<li>Desaparece <code>GET /switch-database/{data_source}</code>.</li>
+<li>New groups: <a href="../../referencia-api/workflows/">workflows</a>, <a href="../../referencia-api/events/">events</a>, <a href="../../referencia-api/kpis/">kpis</a>, <a href="../../referencia-api/robot-maps/">robot-maps</a>, <a href="../../referencia-api/settings/">settings</a> and <a href="../../referencia-api/subscriptions/">subscriptions</a>.</li>
+<li><a href="../../referencia-api/devices/">devices</a> and <a href="../../referencia-api/tasks/">tasks</a>: task catalog, start, cancellation, timeline, camera image and meter configuration.</li>
+<li><strong>Superuser scope</strong>: only their own organization and those below it.</li>
+<li>Only one task can be running per robot (409), and a device with data cannot be deleted, only disabled (409).</li>
+<li><code>GET /switch-database/{data_source}</code> is removed.</li>
 </ul>
 
 
@@ -1400,7 +1440,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1432,7 +1472,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
