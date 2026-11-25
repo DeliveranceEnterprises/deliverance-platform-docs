@@ -1,0 +1,58 @@
+site_name: "Deliverance Platform: Manual"
+site_description: Manual de uso de la plataforma Deliverance y referencia de su API REST
+site_dir: site
+docs_dir: docs
+theme:
+  name: material
+  language: es
+  logo: assets/capturas/logo.png
+  favicon: assets/capturas/logo.png
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: blue grey
+  features: [navigation.instant, navigation.tracking, navigation.sections, navigation.top, navigation.indexes, toc.follow, search.suggest, search.highlight, content.code.copy]
+plugins:
+  - search:
+      lang: es
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+nav:
+  - Inicio: index.md
+  - Introducción:
+      - Qué es Deliverance: introduccion/que-es-deliverance.md
+      - Primeros pasos: introduccion/primeros-pasos.md
+      - Novedades: introduccion/novedades.md
+  - Guía de uso:
+      - Login: guia-de-uso/login.md
+      - Dashboard: guia-de-uso/dashboard.md
+      - Devices: guia-de-uso/devices.md
+      - Monitor: guia-de-uso/monitor.md
+      - Operation: guia-de-uso/operation.md
+      - Workflows: guia-de-uso/workflows.md
+      - Analytics: guia-de-uso/analytics.md
+      - User Settings: guia-de-uso/user-settings.md
+      - Admin: guia-de-uso/admin.md
+  - Referencia de API:
+      - Introducción: referencia-api/introduccion.md
+      - Autenticación: referencia-api/autenticacion.md
+      - login: referencia-api/login.md
+      - users: referencia-api/users.md
+      - organizations: referencia-api/organizations.md
+      - devices: referencia-api/devices.md
+      - tasks: referencia-api/tasks.md
+      - workflows: referencia-api/workflows.md
+      - events: referencia-api/events.md
+      - kpis: referencia-api/kpis.md
+      - scenes: referencia-api/scenes.md
+      - robot-maps: referencia-api/robot-maps.md
+      - settings: referencia-api/settings.md
+      - subscriptions: referencia-api/subscriptions.md
+      - utils: referencia-api/utils.md
