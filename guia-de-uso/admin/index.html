@@ -1,14 +1,16 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/admin/">
       
       
         <link rel="prev" href="../user-settings/">
@@ -17,6 +19,12 @@
         <link rel="next" href="../../referencia-api/introduccion/">
       
       
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../es/guia-de-uso/admin/" hreflang="es">
+        
+          <link rel="alternate" href="../../zh/guia-de-uso/admin/" hreflang="zh">
         
       
       
@@ -74,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#admin-panel-de-administrador" class="md-skip">
-          Saltar a contenido
+        <a href="#admin-admin-panel" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -89,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="../../assets/capturas/logo.png" alt="logo">
@@ -120,6 +128,38 @@
     
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/guia-de-uso/admin/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/guia-de-uso/admin/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -131,16 +171,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -153,7 +193,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -187,7 +227,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -213,7 +253,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -264,7 +304,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -280,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -300,7 +340,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -328,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -356,7 +396,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -429,7 +469,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -445,7 +485,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -728,7 +768,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -737,7 +777,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -754,10 +794,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anadir-un-usuario" class="md-nav__link">
+  <a href="#add-a-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Añadir un usuario
+        Add a user
       
     </span>
   </a>
@@ -782,10 +822,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anadir-una-organizacion" class="md-nav__link">
+  <a href="#add-an-organization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Añadir una organización
+        Add an organization
       
     </span>
   </a>
@@ -798,10 +838,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-de-una-organizacion" class="md-nav__link">
+  <a href="#organization-tier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier de una organización
+        Organization tier
       
     </span>
   </a>
@@ -886,7 +926,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -902,7 +942,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -922,7 +962,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -950,7 +990,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1348,7 +1388,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1357,7 +1397,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -1374,10 +1414,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anadir-un-usuario" class="md-nav__link">
+  <a href="#add-a-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Añadir un usuario
+        Add a user
       
     </span>
   </a>
@@ -1402,10 +1442,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anadir-una-organizacion" class="md-nav__link">
+  <a href="#add-an-organization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Añadir una organización
+        Add an organization
       
     </span>
   </a>
@@ -1418,10 +1458,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-de-una-organizacion" class="md-nav__link">
+  <a href="#organization-tier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier de una organización
+        Organization tier
       
     </span>
   </a>
@@ -1445,31 +1485,31 @@
 
 
 
-<h1 id="admin-panel-de-administrador">Admin: Panel de administrador<a class="headerlink" href="#admin-panel-de-administrador" title="Permanent link">&para;</a></h1>
-<p>Gestión de usuarios y organizaciones. Solo aparece a los administradores, que gestionan <strong>su organización y las que cuelgan de ella</strong>.</p>
+<h1 id="admin-admin-panel">Admin: Admin panel<a class="headerlink" href="#admin-admin-panel" title="Permanent link">&para;</a></h1>
+<p>Management of users and organizations. It only appears to administrators, who manage <strong>their own organization and those below it</strong>.</p>
 <h2 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h2>
-<p><img alt="Usuarios" src="../../assets/capturas/admin-users.png" /></p>
-<p>Lista de usuarios: nombre, email, organización, rol y estado. El menú de cada fila permite editarlo o borrarlo.</p>
-<h3 id="anadir-un-usuario">Añadir un usuario<a class="headerlink" href="#anadir-un-usuario" title="Permanent link">&para;</a></h3>
-<p><img alt="Añadir un usuario" src="../../assets/capturas/admin-add-user.png" /></p>
+<p><img alt="Users" src="../../assets/capturas/admin-users.png" /></p>
+<p>List of users: name, email, organization, role and status. The menu in each row lets you edit or delete the user.</p>
+<h3 id="add-a-user">Add a user<a class="headerlink" href="#add-a-user" title="Permanent link">&para;</a></h3>
+<p><img alt="Add a user" src="../../assets/capturas/admin-add-user.png" /></p>
 <ul>
-<li><strong>Email</strong> y <strong>Full name</strong>.</li>
-<li><strong>Organization</strong>: a qué organización pertenece.</li>
-<li><strong>Password</strong> y <strong>Confirm Password</strong>: contraseña inicial.</li>
-<li><strong>Superuser</strong>: administrador de su organización y de las que cuelgan de ella.</li>
-<li><strong>Active</strong>: si se desmarca, no podrá iniciar sesión.</li>
+<li><strong>Email</strong> and <strong>Full name</strong>.</li>
+<li><strong>Organization</strong>: the organization the user belongs to.</li>
+<li><strong>Password</strong> and <strong>Confirm Password</strong>: initial password.</li>
+<li><strong>Superuser</strong>: administrator of their organization and those below it.</li>
+<li><strong>Active</strong>: if unchecked, the user cannot log in.</li>
 </ul>
 <h2 id="organizations">Organizations<a class="headerlink" href="#organizations" title="Permanent link">&para;</a></h2>
-<p><img alt="Organizaciones" src="../../assets/capturas/admin-organizations.png" /></p>
-<p>Las organizaciones por jerarquía, con su nivel y su tier. La propia está marcada como <em>Current</em> y sus acciones están desactivadas.</p>
-<h3 id="anadir-una-organizacion">Añadir una organización<a class="headerlink" href="#anadir-una-organizacion" title="Permanent link">&para;</a></h3>
-<p><img alt="Añadir una organización" src="../../assets/capturas/admin-add-organization.png" /></p>
-<p>Nombre, descripción, dirección y <strong>Parent Organization</strong>, la organización de la que cuelga.</p>
-<h2 id="tier-de-una-organizacion">Tier de una organización<a class="headerlink" href="#tier-de-una-organizacion" title="Permanent link">&para;</a></h2>
-<p><img alt="Tier de una organización" src="../../assets/capturas/admin-tier.png" /></p>
-<p><strong>Tier details</strong> muestra el nivel contratado (<em>Watch</em>, <em>Operate</em> u <em>Orchestrate</em>), el fin de contrato, desde cuándo está en ese nivel, los robots en servicio, a quién se factura, la referencia del contrato y lo que incluye. El tier lo cambia Deliverance.</p>
-<p><strong>Billed to</strong> indica quién recibe la factura. El administrador de la organización padre puede incluir en la suya la de una organización hija con <em>Add its bill to...</em></p>
-<p>Estados: <em>Active</em>, <em>Ends soon</em>, <em>Expired</em> y <em>Suspended</em>. Que un contrato termine no cambia nada por sí solo. Cuando Deliverance <strong>suspende</strong> una organización, sus usuarios no pueden entrar en la plataforma; sus datos, conectores y workflows continúan.</p>
+<p><img alt="Organizations" src="../../assets/capturas/admin-organizations.png" /></p>
+<p>The organizations by hierarchy, with their level and tier. Your own is marked as <em>Current</em> and its actions are disabled.</p>
+<h3 id="add-an-organization">Add an organization<a class="headerlink" href="#add-an-organization" title="Permanent link">&para;</a></h3>
+<p><img alt="Add an organization" src="../../assets/capturas/admin-add-organization.png" /></p>
+<p>Name, description, address and <strong>Parent Organization</strong>, the organization it sits under.</p>
+<h2 id="organization-tier">Organization tier<a class="headerlink" href="#organization-tier" title="Permanent link">&para;</a></h2>
+<p><img alt="Organization tier" src="../../assets/capturas/admin-tier.png" /></p>
+<p><strong>Tier details</strong> shows the contracted level (<em>Watch</em>, <em>Operate</em> or <em>Orchestrate</em>), the end of the contract, since when the organization has been in that level, the robots in service, who is billed, the contract reference and what it includes. The tier is changed by Deliverance.</p>
+<p><strong>Billed to</strong> shows who receives the bill. The administrator of the parent organization can include a child organization's bill in their own with <em>Add its bill to...</em></p>
+<p>Statuses: <em>Active</em>, <em>Ends soon</em>, <em>Expired</em> and <em>Suspended</em>. The end of a contract does not change anything by itself. When Deliverance <strong>suspends</strong> an organization, its users cannot enter the platform; its data, connectors and workflows continue.</p>
 
 
 
@@ -1493,7 +1533,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1525,7 +1565,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>

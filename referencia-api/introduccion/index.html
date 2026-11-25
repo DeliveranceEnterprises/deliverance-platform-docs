@@ -1,14 +1,16 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/referencia-api/introduccion/">
       
       
         <link rel="prev" href="../../guia-de-uso/admin/">
@@ -18,6 +20,12 @@
       
       
         
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../es/referencia-api/introduccion/" hreflang="es">
+        
+          <link rel="alternate" href="../../zh/referencia-api/introduccion/" hreflang="zh">
+        
       
       
       <link rel="icon" href="../../assets/capturas/logo.png">
@@ -25,7 +33,7 @@
     
     
       
-        <title>Introducción - Deliverance Platform: Manual</title>
+        <title>Overview - Deliverance Platform: Manual</title>
       
     
     
@@ -74,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#referencia-de-api-introduccion" class="md-skip">
-          Saltar a contenido
+        <a href="#api-reference-introduction" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -89,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="../../assets/capturas/logo.png" alt="logo">
@@ -109,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introducción
+              Overview
             
           </span>
         </div>
@@ -119,6 +127,38 @@
       
     
     
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/referencia-api/introduccion/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/referencia-api/introduccion/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
     
       
@@ -131,16 +171,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -153,7 +193,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -187,7 +227,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -213,7 +253,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -264,7 +304,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -280,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -300,7 +340,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -328,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -356,7 +396,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -427,7 +467,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -443,7 +483,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -772,7 +812,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -788,7 +828,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -817,7 +857,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -835,7 +875,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -847,7 +887,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -856,15 +896,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-una-api-rest" class="md-nav__link">
+  <a href="#what-is-a-rest-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Qué es una API REST?
+        What is a REST API?
       
     </span>
   </a>
@@ -872,10 +912,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#para-que-sirve-la-api-de-deliverance" class="md-nav__link">
+  <a href="#what-is-the-deliverance-api-for" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Para qué sirve la API de Deliverance?
+        What is the Deliverance API for?
       
     </span>
   </a>
@@ -883,10 +923,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#categorias-tags" class="md-nav__link">
+  <a href="#categories-tags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Categorías (tags)
+        Categories (tags)
       
     </span>
   </a>
@@ -894,10 +934,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quien-puede-llamar-a-cada-endpoint" class="md-nav__link">
+  <a href="#who-can-call-each-endpoint" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quién puede llamar a cada endpoint
+        Who can call each endpoint
       
     </span>
   </a>
@@ -905,10 +945,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campos-y-patrones-basicos" class="md-nav__link">
+  <a href="#basic-fields-and-patterns" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Campos y patrones básicos
+        Basic fields and patterns
       
     </span>
   </a>
@@ -916,10 +956,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#errores-habituales" class="md-nav__link">
+  <a href="#common-errors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Errores habituales
+        Common errors
       
     </span>
   </a>
@@ -949,7 +989,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1347,7 +1387,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1356,15 +1396,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-una-api-rest" class="md-nav__link">
+  <a href="#what-is-a-rest-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Qué es una API REST?
+        What is a REST API?
       
     </span>
   </a>
@@ -1372,10 +1412,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#para-que-sirve-la-api-de-deliverance" class="md-nav__link">
+  <a href="#what-is-the-deliverance-api-for" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Para qué sirve la API de Deliverance?
+        What is the Deliverance API for?
       
     </span>
   </a>
@@ -1383,10 +1423,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#categorias-tags" class="md-nav__link">
+  <a href="#categories-tags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Categorías (tags)
+        Categories (tags)
       
     </span>
   </a>
@@ -1394,10 +1434,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quien-puede-llamar-a-cada-endpoint" class="md-nav__link">
+  <a href="#who-can-call-each-endpoint" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quién puede llamar a cada endpoint
+        Who can call each endpoint
       
     </span>
   </a>
@@ -1405,10 +1445,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campos-y-patrones-basicos" class="md-nav__link">
+  <a href="#basic-fields-and-patterns" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Campos y patrones básicos
+        Basic fields and patterns
       
     </span>
   </a>
@@ -1416,10 +1456,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#errores-habituales" class="md-nav__link">
+  <a href="#common-errors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Errores habituales
+        Common errors
       
     </span>
   </a>
@@ -1443,147 +1483,147 @@
 
 
 
-<h1 id="referencia-de-api-introduccion">Referencia de API: Introducción<a class="headerlink" href="#referencia-de-api-introduccion" title="Permanent link">&para;</a></h1>
-<p>Esta referencia corresponde a la <strong>API 0.11.2</strong>.</p>
-<h2 id="que-es-una-api-rest">¿Qué es una API REST?<a class="headerlink" href="#que-es-una-api-rest" title="Permanent link">&para;</a></h2>
-<p>Una <strong>API REST</strong> es una forma estándar de que un programa hable con otro por internet: en vez de abrir el navegador y hacer clic en botones, un programa envía una petición HTTP a una dirección concreta (<strong>endpoint</strong>) y recibe una respuesta, normalmente en formato JSON. Cada endpoint tiene un método (<strong>GET</strong> para leer, <strong>POST</strong> para crear, <strong>PUT/PATCH</strong> para modificar, <strong>DELETE</strong> para borrar) y una ruta (por ejemplo <code>/api/v1/devices/</code>).</p>
-<h2 id="para-que-sirve-la-api-de-deliverance">¿Para qué sirve la API de Deliverance?<a class="headerlink" href="#para-que-sirve-la-api-de-deliverance" title="Permanent link">&para;</a></h2>
-<p>Da acceso por código a lo que se puede ver y hacer desde la plataforma: dispositivos, tareas, workflows, eventos, métricas, organizaciones y usuarios. Sirve para integrar los datos en otro sistema, automatizar acciones o construir herramientas propias.</p>
-<h2 id="categorias-tags">Categorías (tags)<a class="headerlink" href="#categorias-tags" title="Permanent link">&para;</a></h2>
+<h1 id="api-reference-introduction">API Reference: Introduction<a class="headerlink" href="#api-reference-introduction" title="Permanent link">&para;</a></h1>
+<p>This reference covers <strong>API 0.11.2</strong>.</p>
+<h2 id="what-is-a-rest-api">What is a REST API?<a class="headerlink" href="#what-is-a-rest-api" title="Permanent link">&para;</a></h2>
+<p>A <strong>REST API</strong> is a standard way for one program to talk to another over the internet: instead of opening the browser and clicking buttons, a program sends an HTTP request to a specific address (<strong>endpoint</strong>) and receives a response, usually in JSON format. Each endpoint has a method (<strong>GET</strong> to read, <strong>POST</strong> to create, <strong>PUT/PATCH</strong> to modify, <strong>DELETE</strong> to delete) and a path (for example <code>/api/v1/devices/</code>).</p>
+<h2 id="what-is-the-deliverance-api-for">What is the Deliverance API for?<a class="headerlink" href="#what-is-the-deliverance-api-for" title="Permanent link">&para;</a></h2>
+<p>It gives access from code to what can be seen and done in the platform: devices, tasks, workflows, events, metrics, organizations and users. Use it to integrate the data into another system, automate actions or build your own tools.</p>
+<h2 id="categories-tags">Categories (tags)<a class="headerlink" href="#categories-tags" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Categoría</th>
-<th>Contenido</th>
+<th>Category</th>
+<th>Contents</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../login/">login</a></td>
-<td>Obtener y verificar el token de acceso.</td>
+<td>Get and verify the access token.</td>
 </tr>
 <tr>
 <td><a href="../users/">users</a></td>
-<td>Usuarios.</td>
+<td>Users.</td>
 </tr>
 <tr>
 <td><a href="../organizations/">organizations</a></td>
-<td>Organizaciones, jerarquía, métricas e informes.</td>
+<td>Organizations, hierarchy, metrics and reports.</td>
 </tr>
 <tr>
 <td><a href="../devices/">devices</a></td>
-<td>Dispositivos, estado, tareas, alarmas y lecturas IoT.</td>
+<td>Devices, status, tasks, alarms and IoT readings.</td>
 </tr>
 <tr>
 <td><a href="../tasks/">tasks</a></td>
-<td>Tareas de los robots: consulta, cancelación y cronograma.</td>
+<td>Robot tasks: query, cancellation and timeline.</td>
 </tr>
 <tr>
 <td><a href="../workflows/">workflows</a></td>
-<td>Automatizaciones y sus ejecuciones.</td>
+<td>Automations and their runs.</td>
 </tr>
 <tr>
 <td><a href="../events/">events</a></td>
-<td>Registro de eventos (solo lectura).</td>
+<td>Event log (read-only).</td>
 </tr>
 <tr>
 <td><a href="../kpis/">kpis</a></td>
-<td>Indicadores actuales e histórico de estado.</td>
+<td>Current indicators and status history.</td>
 </tr>
 <tr>
 <td><a href="../scenes/">scenes</a></td>
-<td>Escenas (edificios) de una organización.</td>
+<td>Scenes (buildings) of an organization.</td>
 </tr>
 <tr>
 <td><a href="../robot-maps/">robot-maps</a></td>
-<td>Plantas, mapas de robots y su calibración.</td>
+<td>Floors, robot maps and their calibration.</td>
 </tr>
 <tr>
 <td><a href="../settings/">settings</a></td>
-<td>Preferencias de usuario y de organización.</td>
+<td>User and organization preferences.</td>
 </tr>
 <tr>
 <td><a href="../subscriptions/">subscriptions</a></td>
-<td>Tier de las organizaciones.</td>
+<td>Organization tiers.</td>
 </tr>
 <tr>
 <td><a href="../utils/">utils</a></td>
-<td>Comprobación del servicio.</td>
+<td>Service check.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="quien-puede-llamar-a-cada-endpoint">Quién puede llamar a cada endpoint<a class="headerlink" href="#quien-puede-llamar-a-cada-endpoint" title="Permanent link">&para;</a></h2>
+<h2 id="who-can-call-each-endpoint">Who can call each endpoint<a class="headerlink" href="#who-can-call-each-endpoint" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Etiqueta</th>
-<th>Significado</th>
+<th>Label</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Público</strong></td>
-<td>Sin token.</td>
+<td><strong>Public</strong></td>
+<td>No token.</td>
 </tr>
 <tr>
-<td><strong>Usuario</strong></td>
-<td>Cualquier usuario activo, sobre los datos de su organización. Un superusuario llega también a las que cuelgan de ella.</td>
+<td><strong>User</strong></td>
+<td>Any active user, on the data of their organization. A superuser also reaches the organizations below it.</td>
 </tr>
 <tr>
-<td><strong>Superusuario</strong></td>
-<td>Solo superusuarios, sobre su organización y las que cuelgan de ella.</td>
+<td><strong>Superuser</strong></td>
+<td>Superusers only, on their organization and those below it.</td>
 </tr>
 <tr>
-<td><strong>Operador</strong></td>
-<td>Quien puede operar robots y workflows; hoy, los superusuarios.</td>
+<td><strong>Operator</strong></td>
+<td>Whoever can operate robots and workflows; today, superusers.</td>
 </tr>
 </tbody>
 </table>
-<p>Un usuario sin organización no accede a ningún dato.</p>
-<h2 id="campos-y-patrones-basicos">Campos y patrones básicos<a class="headerlink" href="#campos-y-patrones-basicos" title="Permanent link">&para;</a></h2>
+<p>A user with no organization has no access to any data.</p>
+<h2 id="basic-fields-and-patterns">Basic fields and patterns<a class="headerlink" href="#basic-fields-and-patterns" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Identificadores</strong>: son UUID. El campo se llama <code>uid</code> en todos los recursos, salvo en los usuarios, donde es <code>id</code>.</li>
-<li><strong>Fechas y horas</strong>: formato ISO 8601. Sin zona horaria, son UTC.</li>
-<li><strong>Listados</strong>: devuelven un objeto <code>{"data": [...], "count": 12}</code>. En los paginados, <code>count</code> es el total disponible; en los no paginados, los elementos devueltos.</li>
-<li><strong>Paginación</strong>: <code>skip</code> (cuántos saltarse) y <code>limit</code> (cuántos devolver como máximo).</li>
-<li><strong>Campos libres</strong>: <code>category</code>, <code>type</code> y <code>status</code> son texto sin lista cerrada. Compáralos sin distinguir mayúsculas y tolera valores desconocidos.</li>
+<li><strong>Identifiers</strong>: they are UUIDs. The field is called <code>uid</code> in every resource except users, where it is <code>id</code>.</li>
+<li><strong>Dates and times</strong>: ISO 8601 format. Without a time zone, they are UTC.</li>
+<li><strong>Lists</strong>: they return an object <code>{"data": [...], "count": 12}</code>. In paginated lists, <code>count</code> is the total available; in non-paginated ones, the number of items returned.</li>
+<li><strong>Pagination</strong>: <code>skip</code> (how many to skip) and <code>limit</code> (the maximum number to return).</li>
+<li><strong>Free fields</strong>: <code>category</code>, <code>type</code> and <code>status</code> are text with no closed list. Compare them case-insensitively and tolerate unknown values.</li>
 </ul>
-<h2 id="errores-habituales">Errores habituales<a class="headerlink" href="#errores-habituales" title="Permanent link">&para;</a></h2>
+<h2 id="common-errors">Common errors<a class="headerlink" href="#common-errors" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Código</th>
-<th>Significado</th>
+<th>Code</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>400</td>
-<td>Petición no válida; algunas rutas lo usan también para permisos insuficientes.</td>
+<td>Invalid request; some paths also use it for insufficient permissions.</td>
 </tr>
 <tr>
 <td>401 / 403</td>
-<td>Sin token, token no válido o caducado, o sin permiso.</td>
+<td>No token, invalid or expired token, or no permission.</td>
 </tr>
 <tr>
 <td>403 <code>password_expired</code></td>
-<td>Contraseña caducada: solo funciona el cambio de contraseña.</td>
+<td>Expired password: only changing the password works.</td>
 </tr>
 <tr>
 <td>403 <code>organization_suspended</code></td>
-<td>La organización del usuario está suspendida.</td>
+<td>The user's organization is suspended.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>No existe.</td>
+<td>Does not exist.</td>
 </tr>
 <tr>
 <td>409</td>
-<td>Conflicto con el estado actual (se indica en cada página).</td>
+<td>Conflict with the current state (described on each page).</td>
 </tr>
 <tr>
 <td>422</td>
-<td>Los datos no son válidos.</td>
+<td>The data is not valid.</td>
 </tr>
 </tbody>
 </table>
@@ -1610,7 +1650,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1642,7 +1682,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>

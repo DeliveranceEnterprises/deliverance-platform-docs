@@ -1,14 +1,16 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/guia-de-uso/monitor/">
       
       
         <link rel="prev" href="../devices/">
@@ -17,6 +19,12 @@
         <link rel="next" href="../operation/">
       
       
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../es/guia-de-uso/monitor/" hreflang="es">
+        
+          <link rel="alternate" href="../../zh/guia-de-uso/monitor/" hreflang="zh">
         
       
       
@@ -74,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#monitor-operacion-del-dispositivo" class="md-skip">
-          Saltar a contenido
+        <a href="#monitor-device-operation" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -89,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="../../assets/capturas/logo.png" alt="logo">
@@ -120,6 +128,38 @@
     
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/guia-de-uso/monitor/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/guia-de-uso/monitor/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -131,16 +171,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -153,7 +193,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -187,7 +227,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -213,7 +253,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -264,7 +304,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -280,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -300,7 +340,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -328,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -356,7 +396,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -429,7 +469,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -445,7 +485,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -588,7 +628,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -597,27 +637,27 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#detalle-de-operacion" class="md-nav__link">
+  <a href="#operation-detail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detalle de operación
+        Operation detail
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Detalle de operación">
+    <nav class="md-nav" aria-label="Operation detail">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#robot-de-reparto" class="md-nav__link">
+  <a href="#delivery-robot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Robot de reparto
+        Delivery robot
       
     </span>
   </a>
@@ -625,10 +665,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#robot-de-limpieza" class="md-nav__link">
+  <a href="#cleaning-robot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Robot de limpieza
+        Cleaning robot
       
     </span>
   </a>
@@ -647,10 +687,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#medidor-de-energia" class="md-nav__link">
+  <a href="#energy-meter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Medidor de energía
+        Energy meter
       
     </span>
   </a>
@@ -658,10 +698,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#camara" class="md-nav__link">
+  <a href="#camera" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cámara
+        Camera
       
     </span>
   </a>
@@ -674,10 +714,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#escena-y-mapa-del-robot" class="md-nav__link">
+  <a href="#robot-scene-and-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Escena y mapa del robot
+        Robot scene and map
       
     </span>
   </a>
@@ -685,10 +725,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#historico-de-estado" class="md-nav__link">
+  <a href="#status-history" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Histórico de estado
+        Status history
       
     </span>
   </a>
@@ -696,10 +736,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actividad" class="md-nav__link">
+  <a href="#activity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actividad
+        Activity
       
     </span>
   </a>
@@ -707,10 +747,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#alarmas" class="md-nav__link">
+  <a href="#alarms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alarmas
+        Alarms
       
     </span>
   </a>
@@ -718,10 +758,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tareas-del-robot" class="md-nav__link">
+  <a href="#robot-tasks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tareas del robot
+        Robot tasks
       
     </span>
   </a>
@@ -729,10 +769,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modo-avanzado" class="md-nav__link">
+  <a href="#advanced-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modo avanzado
+        Advanced mode
       
     </span>
   </a>
@@ -957,7 +997,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -973,7 +1013,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -993,7 +1033,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -1021,7 +1061,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1419,7 +1459,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1428,27 +1468,27 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#detalle-de-operacion" class="md-nav__link">
+  <a href="#operation-detail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detalle de operación
+        Operation detail
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Detalle de operación">
+    <nav class="md-nav" aria-label="Operation detail">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#robot-de-reparto" class="md-nav__link">
+  <a href="#delivery-robot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Robot de reparto
+        Delivery robot
       
     </span>
   </a>
@@ -1456,10 +1496,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#robot-de-limpieza" class="md-nav__link">
+  <a href="#cleaning-robot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Robot de limpieza
+        Cleaning robot
       
     </span>
   </a>
@@ -1478,10 +1518,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#medidor-de-energia" class="md-nav__link">
+  <a href="#energy-meter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Medidor de energía
+        Energy meter
       
     </span>
   </a>
@@ -1489,10 +1529,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#camara" class="md-nav__link">
+  <a href="#camera" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cámara
+        Camera
       
     </span>
   </a>
@@ -1505,10 +1545,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#escena-y-mapa-del-robot" class="md-nav__link">
+  <a href="#robot-scene-and-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Escena y mapa del robot
+        Robot scene and map
       
     </span>
   </a>
@@ -1516,10 +1556,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#historico-de-estado" class="md-nav__link">
+  <a href="#status-history" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Histórico de estado
+        Status history
       
     </span>
   </a>
@@ -1527,10 +1567,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actividad" class="md-nav__link">
+  <a href="#activity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actividad
+        Activity
       
     </span>
   </a>
@@ -1538,10 +1578,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#alarmas" class="md-nav__link">
+  <a href="#alarms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alarmas
+        Alarms
       
     </span>
   </a>
@@ -1549,10 +1589,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tareas-del-robot" class="md-nav__link">
+  <a href="#robot-tasks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tareas del robot
+        Robot tasks
       
     </span>
   </a>
@@ -1560,10 +1600,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modo-avanzado" class="md-nav__link">
+  <a href="#advanced-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modo avanzado
+        Advanced mode
       
     </span>
   </a>
@@ -1587,83 +1627,83 @@
 
 
 
-<h1 id="monitor-operacion-del-dispositivo">Monitor: Operación del dispositivo<a class="headerlink" href="#monitor-operacion-del-dispositivo" title="Permanent link">&para;</a></h1>
-<p>Monitoriza los datos operativos de los dispositivos habilitados de la organización seleccionada. El panel izquierdo los lista y, al seleccionar uno, muestra su detalle. Arriba se elige entre los modos <strong>Simple</strong> y <strong>Advanced</strong>.</p>
+<h1 id="monitor-device-operation">Monitor: Device operation<a class="headerlink" href="#monitor-device-operation" title="Permanent link">&para;</a></h1>
+<p>Monitors the operating data of the enabled devices of the selected organization. The left panel lists them and, when you select one, its detail is shown. At the top you choose between <strong>Simple</strong> and <strong>Advanced</strong> mode.</p>
 <p><img alt="Monitor" src="../../assets/capturas/monitor.png" /></p>
-<h2 id="detalle-de-operacion">Detalle de operación<a class="headerlink" href="#detalle-de-operacion" title="Permanent link">&para;</a></h2>
-<p>El contenido <strong>cambia según el tipo de dispositivo</strong>.</p>
-<h3 id="robot-de-reparto">Robot de reparto<a class="headerlink" href="#robot-de-reparto" title="Permanent link">&para;</a></h3>
-<p><img alt="Robot de reparto" src="../../assets/capturas/monitor-delivery-robot.png" /></p>
-<p>Estado, batería, escena, última conexión, tarea en curso, código de error, salud de mantenimiento (<em>Maintenance health</em>, lo que queda hasta el próximo mantenimiento), histórico de tareas y actividad.</p>
-<h3 id="robot-de-limpieza">Robot de limpieza<a class="headerlink" href="#robot-de-limpieza" title="Permanent link">&para;</a></h3>
-<p><img alt="Robot de limpieza" src="../../assets/capturas/monitor-cleaning-robot.png" /></p>
-<p>Añade los niveles de agua (limpia y sucia) y los consumibles (mopa, filtros, cepillos...), cada uno con su porcentaje.</p>
+<h2 id="operation-detail">Operation detail<a class="headerlink" href="#operation-detail" title="Permanent link">&para;</a></h2>
+<p>The content <strong>changes with the type of device</strong>.</p>
+<h3 id="delivery-robot">Delivery robot<a class="headerlink" href="#delivery-robot" title="Permanent link">&para;</a></h3>
+<p><img alt="Delivery robot" src="../../assets/capturas/monitor-delivery-robot.png" /></p>
+<p>Status, battery, scene, last connection, current task, error code, <em>Maintenance health</em> (what is left before the next maintenance), task history and activity.</p>
+<h3 id="cleaning-robot">Cleaning robot<a class="headerlink" href="#cleaning-robot" title="Permanent link">&para;</a></h3>
+<p><img alt="Cleaning robot" src="../../assets/capturas/monitor-cleaning-robot.png" /></p>
+<p>Adds the water levels (fresh and sewage) and the consumables (mop, filters, brushes...), each with its percentage.</p>
 <h3 id="sensor">Sensor<a class="headerlink" href="#sensor" title="Permanent link">&para;</a></h3>
 <p><img alt="Sensor" src="../../assets/capturas/monitor-sensor.png" /></p>
-<p>Magnitudes medidas, fecha de la última lectura y gráficas por magnitud (<em>Temperature</em>, <em>Humidity</em>, <em>Light</em>, <em>Motion</em>) con selector de periodo. Un sensor solo de temperatura muestra únicamente esa gráfica.</p>
-<h3 id="medidor-de-energia">Medidor de energía<a class="headerlink" href="#medidor-de-energia" title="Permanent link">&para;</a></h3>
-<p><img alt="Medidor de energía" src="../../assets/capturas/monitor-meter.png" /></p>
-<p>Consumo actual, media y pico de las últimas 24 horas, y la gráfica <strong>Energy Consumption</strong>. Un hub muestra sus medidores; al pulsar uno se abre.</p>
-<h3 id="camara">Cámara<a class="headerlink" href="#camara" title="Permanent link">&para;</a></h3>
-<p><img alt="Cámara" src="../../assets/capturas/monitor-camera.png" /></p>
-<p>Última alarma, última conexión y <strong>Live Image</strong>: imágenes fijas que se renuevan cada pocos segundos, no vídeo. Si la última tiene más de 30 segundos se indica <em>Not live</em>. Los mensajes avisan si la cámara está desconectada o no ha enviado imagen.</p>
-<h2 id="escena-y-mapa-del-robot">Escena y mapa del robot<a class="headerlink" href="#escena-y-mapa-del-robot" title="Permanent link">&para;</a></h2>
-<p><img alt="Mapa del robot" src="../../assets/capturas/monitor-scene-map.png" /></p>
-<p>La tarjeta <strong>Scene</strong> muestra el robot sobre su mapa, con el edificio y la planta; el botón de ampliar abre el mapa completo. La etiqueta indica la fiabilidad de la posición:</p>
+<p>Measured magnitudes, date of the last reading and charts per magnitude (<em>Temperature</em>, <em>Humidity</em>, <em>Light</em>, <em>Motion</em>) with a period selector. A temperature-only sensor shows only that chart.</p>
+<h3 id="energy-meter">Energy meter<a class="headerlink" href="#energy-meter" title="Permanent link">&para;</a></h3>
+<p><img alt="Energy meter" src="../../assets/capturas/monitor-meter.png" /></p>
+<p>Current consumption, average and peak of the last 24 hours, and the <strong>Energy Consumption</strong> chart. A hub shows its meters; clicking one opens it.</p>
+<h3 id="camera">Camera<a class="headerlink" href="#camera" title="Permanent link">&para;</a></h3>
+<p><img alt="Camera" src="../../assets/capturas/monitor-camera.png" /></p>
+<p>Last alarm, last connection and <strong>Live Image</strong>: still pictures refreshed every few seconds, not video. If the latest is more than 30 seconds old, <em>Not live</em> is shown. Messages tell you if the camera is offline or has not sent a picture.</p>
+<h2 id="robot-scene-and-map">Robot scene and map<a class="headerlink" href="#robot-scene-and-map" title="Permanent link">&para;</a></h2>
+<p><img alt="Robot map" src="../../assets/capturas/monitor-scene-map.png" /></p>
+<p>The <strong>Scene</strong> card shows the robot on its map, with the building and floor; the expand button opens the whole map. The label shows how reliable the position is:</p>
 <table>
 <thead>
 <tr>
-<th>Etiqueta</th>
-<th>Significado</th>
+<th>Label</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Exact</strong></td>
-<td>Escala dada por el fabricante.</td>
+<td>Scale given by the manufacturer.</td>
 </tr>
 <tr>
 <td><strong>Calibrated</strong></td>
-<td>Calibrado por un usuario; se indica el error.</td>
+<td>Calibrated by a user; the error is shown.</td>
 </tr>
 <tr>
 <td><strong>Estimated</strong></td>
-<td>Calculado a partir de puntos conocidos del mapa.</td>
+<td>Calculated from known points of the map.</td>
 </tr>
 <tr>
 <td><strong>Rough</strong></td>
-<td>Posición aproximada.</td>
+<td>Approximate position.</td>
 </tr>
 <tr>
 <td><strong>Not calibrated</strong></td>
-<td>El mapa se ve, sin posición del robot.</td>
+<td>The map is shown, without the robot's position.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="historico-de-estado">Histórico de estado<a class="headerlink" href="#historico-de-estado" title="Permanent link">&para;</a></h2>
-<p><img alt="Histórico de estado" src="../../assets/capturas/monitor-status-history.png" /></p>
-<p>La franja <strong>Status history</strong> resume las últimas 24 horas. <strong>Details</strong> (o la etiqueta de estado del dispositivo) abre el histórico de 24 horas, 7 o 30 días, con el tiempo en cada estado, la batería y los cambios.</p>
-<h2 id="actividad">Actividad<a class="headerlink" href="#actividad" title="Permanent link">&para;</a></h2>
-<p><img alt="Registro de actividad" src="../../assets/capturas/monitor-activity-log.png" /></p>
-<p><strong>Activity</strong> muestra lo último que le ha ocurrido al dispositivo. <strong>Full log</strong> abre el registro con filtros: <em>Tasks</em>, <em>Connectors</em>, <em>Alarms</em>, <em>Signals</em> y <em>Status</em>. <strong>View task</strong> abre la tarea correspondiente.</p>
-<h2 id="alarmas">Alarmas<a class="headerlink" href="#alarmas" title="Permanent link">&para;</a></h2>
-<p>Los sensores y medidores tienen un bloque <strong>Configured Alarms</strong>, donde cada alarma se puede activar, editar o borrar. <strong>Add alarm</strong> crea una:</p>
-<p><img alt="Añadir una alarma" src="../../assets/capturas/monitor-add-alarm.png" /></p>
+<h2 id="status-history">Status history<a class="headerlink" href="#status-history" title="Permanent link">&para;</a></h2>
+<p><img alt="Status history" src="../../assets/capturas/monitor-status-history.png" /></p>
+<p>The <strong>Status history</strong> strip summarizes the last 24 hours. <strong>Details</strong> (or the device's status label) opens the history of 24 hours, 7 or 30 days, with the time in each status, the battery and the changes.</p>
+<h2 id="activity">Activity<a class="headerlink" href="#activity" title="Permanent link">&para;</a></h2>
+<p><img alt="Activity log" src="../../assets/capturas/monitor-activity-log.png" /></p>
+<p><strong>Activity</strong> shows the latest things that have happened to the device. <strong>Full log</strong> opens the log with filters: <em>Tasks</em>, <em>Connectors</em>, <em>Alarms</em>, <em>Signals</em> and <em>Status</em>. <strong>View task</strong> opens the corresponding task.</p>
+<h2 id="alarms">Alarms<a class="headerlink" href="#alarms" title="Permanent link">&para;</a></h2>
+<p>Sensors and meters have a <strong>Configured Alarms</strong> block, where each alarm can be enabled, edited or deleted. <strong>Add alarm</strong> creates one:</p>
+<p><img alt="Add an alarm" src="../../assets/capturas/monitor-add-alarm.png" /></p>
 <ul>
-<li><strong>Name</strong>: nombre descriptivo (opcional).</li>
-<li><strong>Magnitude</strong>: qué dato se vigila.</li>
-<li><strong>Operator</strong> y <strong>Threshold value</strong>: la condición que la dispara. <em>Present</em> y <em>Absent</em> no usan umbral.</li>
-<li><strong>Start date</strong> y <strong>End date</strong> (opcional): periodo de vigencia.</li>
-<li><strong>Enabled</strong>: desactivarla sin borrarla.</li>
+<li><strong>Name</strong>: descriptive name (optional).</li>
+<li><strong>Magnitude</strong>: which value is watched.</li>
+<li><strong>Operator</strong> and <strong>Threshold value</strong>: the condition that triggers it. <em>Present</em> and <em>Absent</em> do not use a threshold.</li>
+<li><strong>Start date</strong> and <strong>End date</strong> (optional): period in which it applies.</li>
+<li><strong>Enabled</strong>: turn it off without deleting it.</li>
 </ul>
-<p>Cuando salta, queda en la actividad y se avisa por email a los usuarios de la organización con <em>Alarm Notifications</em> activado.</p>
-<h2 id="tareas-del-robot">Tareas del robot<a class="headerlink" href="#tareas-del-robot" title="Permanent link">&para;</a></h2>
-<p><img alt="Lista de tareas" src="../../assets/capturas/monitor-task-list.png" /></p>
-<p><strong>Detailed Task List</strong> lista las tareas con fecha, tipo, estado y nombre. <strong>Download</strong> permite imprimir o guardar el informe en PDF. Al pulsar una tarea se despliega su informe, cuyo contenido depende del robot:</p>
-<p><img alt="Detalle de una tarea" src="../../assets/capturas/monitor-task-detail.png" /></p>
-<h2 id="modo-avanzado">Modo avanzado<a class="headerlink" href="#modo-avanzado" title="Permanent link">&para;</a></h2>
-<p><img alt="Modo avanzado" src="../../assets/capturas/monitor-advanced.png" /></p>
-<p><strong>Advanced</strong> compara en una gráfica las lecturas de varios medidores y sensores: se elige el intervalo, la resolución, las magnitudes (<em>Fields</em>) y los dispositivos, y se pulsa <strong>Generate</strong>. <em>Split meter phases</em> separa L1, L2 y L3.</p>
+<p>When it goes off, it is recorded in the activity and the users of the organization with <em>Alarm Notifications</em> turned on are notified by email.</p>
+<h2 id="robot-tasks">Robot tasks<a class="headerlink" href="#robot-tasks" title="Permanent link">&para;</a></h2>
+<p><img alt="Task list" src="../../assets/capturas/monitor-task-list.png" /></p>
+<p><strong>Detailed Task List</strong> lists the tasks with date, type, status and name. <strong>Download</strong> lets you print the report or save it as PDF. Clicking a task expands its report, whose content depends on the robot:</p>
+<p><img alt="Task detail" src="../../assets/capturas/monitor-task-detail.png" /></p>
+<h2 id="advanced-mode">Advanced mode<a class="headerlink" href="#advanced-mode" title="Permanent link">&para;</a></h2>
+<p><img alt="Advanced mode" src="../../assets/capturas/monitor-advanced.png" /></p>
+<p><strong>Advanced</strong> compares the readings of several meters and sensors in one chart: choose the range, the resolution, the magnitudes (<em>Fields</em>) and the devices, and click <strong>Generate</strong>. <em>Split meter phases</em> separates L1, L2 and L3.</p>
 
 
 
@@ -1687,7 +1727,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1719,7 +1759,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>

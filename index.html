@@ -1,20 +1,28 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual de uso de la plataforma Deliverance y referencia de su API REST">
+        <meta name="description" content="Deliverance platform user manual and REST API reference">
       
       
+      
+        <link rel="canonical" href="https://deliveranceenterprises.github.io/deliverance-platform-docs/">
       
       
       
         <link rel="next" href="introduccion/que-es-deliverance/">
       
       
+        
+          <link rel="alternate" href="/deliverance-platform-docs/" hreflang="en">
+        
+          <link rel="alternate" href="/deliverance-platform-docs/es/" hreflang="es">
+        
+          <link rel="alternate" href="/deliverance-platform-docs/zh/" hreflang="zh">
         
       
       
@@ -72,8 +80,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#manual-de-la-plataforma-deliverance" class="md-skip">
-          Saltar a contenido
+        <a href="#deliverance-platform-manual" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -87,7 +95,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Deliverance Platform: Manual" class="md-header__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
   <img src="assets/capturas/logo.png" alt="logo">
@@ -107,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inicio
+              Home
             
           </span>
         </div>
@@ -117,6 +125,38 @@
       
     
     
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/deliverance-platform-docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/deliverance-platform-docs/es/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/deliverance-platform-docs/zh/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
     
       
@@ -129,16 +169,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -151,7 +191,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -185,7 +225,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Deliverance Platform: Manual" class="md-nav__button md-logo" aria-label="Deliverance Platform: Manual" data-md-component="logo">
       
@@ -220,7 +260,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -238,7 +278,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Home
   
 
     
@@ -250,7 +290,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -259,15 +299,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#por-donde-empiezo" class="md-nav__link">
+  <a href="#where-do-i-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Por dónde empiezo?
+        Where do I start?
       
     </span>
   </a>
@@ -320,7 +360,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Introduction
   
 
     
@@ -336,7 +376,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Introducción
+    Introduction
   
 
           </label>
@@ -356,7 +396,7 @@
   <span class="md-ellipsis">
     
   
-    Qué es Deliverance
+    What is Deliverance
   
 
     
@@ -384,7 +424,7 @@
   <span class="md-ellipsis">
     
   
-    Primeros pasos
+    Getting started
   
 
     
@@ -412,7 +452,7 @@
   <span class="md-ellipsis">
     
   
-    Novedades
+    What's new
   
 
     
@@ -483,7 +523,7 @@
   <span class="md-ellipsis">
     
   
-    Guía de uso
+    User guide
   
 
     
@@ -499,7 +539,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guía de uso
+    User guide
   
 
           </label>
@@ -826,7 +866,7 @@
   <span class="md-ellipsis">
     
   
-    Referencia de API
+    API reference
   
 
     
@@ -842,7 +882,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Referencia de API
+    API reference
   
 
           </label>
@@ -862,7 +902,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Overview
   
 
     
@@ -890,7 +930,7 @@
   <span class="md-ellipsis">
     
   
-    Autenticación
+    Authentication
   
 
     
@@ -1288,7 +1328,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1297,15 +1337,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#por-donde-empiezo" class="md-nav__link">
+  <a href="#where-do-i-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Por dónde empiezo?
+        Where do I start?
       
     </span>
   </a>
@@ -1329,59 +1369,59 @@
 
 
 
-<h1 id="manual-de-la-plataforma-deliverance">Manual de la plataforma Deliverance<a class="headerlink" href="#manual-de-la-plataforma-deliverance" title="Permanent link">&para;</a></h1>
-<p>Bienvenido al manual de <strong>Deliverance Platform</strong>, la plataforma que centraliza la gestión
-de robots y dispositivos IoT de una organización en un único panel, con independencia del
-fabricante de cada dispositivo.</p>
-<p>Este manual corresponde a <strong>Platform 0.9.2</strong> y <strong>API 0.11.2</strong> (noviembre de 2026). Los cambios
-respecto a la edición anterior están en <a href="introduccion/novedades/">Novedades</a>.</p>
-<p>Este manual se divide en tres partes:</p>
+<h1 id="deliverance-platform-manual">Deliverance platform manual<a class="headerlink" href="#deliverance-platform-manual" title="Permanent link">&para;</a></h1>
+<p>Welcome to the manual of <strong>Deliverance Platform</strong>, the platform that brings the management
+of an organization's robots and IoT devices together in a single panel, whatever the
+manufacturer of each device.</p>
+<p>This manual covers <strong>Platform 0.9.2</strong> and <strong>API 0.11.2</strong> (November 2026). The changes since
+the previous edition are in <a href="introduccion/novedades/">What's new</a>.</p>
+<p>This manual has three parts:</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><strong>Introducción</strong></p>
-<p>Qué es la plataforma, los conceptos básicos que conviene conocer y cómo empezar.</p>
-<p><a href="introduccion/que-es-deliverance/">Empezar por aquí</a></p>
+<p><strong>Introduction</strong></p>
+<p>What the platform is, the basic concepts worth knowing and how to get started.</p>
+<p><a href="introduccion/que-es-deliverance/">Start here</a></p>
 </li>
 <li>
-<p><strong>Guía de uso</strong></p>
-<p>Cómo usar cada pantalla de la plataforma desde el navegador: Dashboard, Devices,
-Monitor, Operation, Workflows, Analytics, User Settings y Admin.</p>
-<p><a href="guia-de-uso/login/">Ir a la guía</a></p>
+<p><strong>User guide</strong></p>
+<p>How to use each screen of the platform from the browser: Dashboard, Devices,
+Monitor, Operation, Workflows, Analytics, User Settings and Admin.</p>
+<p><a href="guia-de-uso/login/">Go to the guide</a></p>
 </li>
 <li>
-<p><strong>Referencia de API</strong></p>
-<p>Documentación de la API REST para integrarse por código: autenticación, endpoints
-disponibles y explicación de los campos.</p>
-<p><a href="referencia-api/introduccion/">Ir a la referencia</a></p>
+<p><strong>API reference</strong></p>
+<p>Documentation of the REST API for integrating by code: authentication, available
+endpoints and explanation of the fields.</p>
+<p><a href="referencia-api/introduccion/">Go to the reference</a></p>
 </li>
 </ul>
 </div>
 <hr />
-<h2 id="por-donde-empiezo">¿Por dónde empiezo?<a class="headerlink" href="#por-donde-empiezo" title="Permanent link">&para;</a></h2>
+<h2 id="where-do-i-start">Where do I start?<a class="headerlink" href="#where-do-i-start" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Si eres...</th>
-<th>Empieza por</th>
+<th>If you are...</th>
+<th>Start with</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Un usuario que va a operar la plataforma día a día</td>
-<td><a href="introduccion/primeros-pasos/">Primeros pasos</a> y luego la <a href="guia-de-uso/login/">Guía de uso</a></td>
+<td>A user who will work with the platform day to day</td>
+<td><a href="introduccion/primeros-pasos/">Getting started</a>, then the <a href="guia-de-uso/login/">User guide</a></td>
 </tr>
 <tr>
-<td>Un administrador que pone en marcha robots y automatizaciones</td>
-<td><a href="guia-de-uso/operation/">Operation</a> y <a href="guia-de-uso/workflows/">Workflows</a></td>
+<td>An administrator setting up robots and automations</td>
+<td><a href="guia-de-uso/operation/">Operation</a> and <a href="guia-de-uso/workflows/">Workflows</a></td>
 </tr>
 <tr>
-<td>Un desarrollador que quiere integrarse por código</td>
-<td><a href="referencia-api/introduccion/">Referencia de API</a> y <a href="referencia-api/autenticacion/">Autenticación</a></td>
+<td>A developer who wants to integrate by code</td>
+<td><a href="referencia-api/introduccion/">API reference</a> and <a href="referencia-api/autenticacion/">Authentication</a></td>
 </tr>
 </tbody>
 </table>
-<p>Las capturas muestran organizaciones, usuarios y dispositivos ficticios.</p>
+<p>The screenshots show fictitious organizations, users and devices.</p>
 
 
 
@@ -1405,7 +1445,7 @@ disponibles y explicación de los campos.</p>
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -1437,7 +1477,7 @@ disponibles y explicación de los campos.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
